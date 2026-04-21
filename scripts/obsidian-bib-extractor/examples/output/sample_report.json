@@ -1,0 +1,90 @@
+[
+  {
+    "source_file": "sample_links.md",
+    "source_line": 6,
+    "source_context": "- [Nature article DOI](https://doi.org/10.1038/s41586-020-2649-2)",
+    "sources": [
+      {
+        "source_file": "sample_links.md",
+        "source_line": 6,
+        "source_context": "- [Nature article DOI](https://doi.org/10.1038/s41586-020-2649-2)"
+      },
+      {
+        "source_file": "sample_note.md",
+        "source_line": 6,
+        "source_context": "- DOI URL: https://doi.org/10.1038/s41586-020-2649-2"
+      },
+      {
+        "source_file": "sample_note.md",
+        "source_line": 5,
+        "source_context": "- DOI text: 10.1038/s41586-020-2649-2"
+      }
+    ],
+    "raw_match": "10.1038/s41586-020-2649-2",
+    "raw_matches": [
+      "10.1038/s41586-020-2649-2",
+      "https://doi.org/10.1038/s41586-020-2649-2"
+    ],
+    "id_type": "doi",
+    "normalized_id": "10.1038/s41586-020-2649-2",
+    "fetch_status": "success",
+    "bibtex_entry": "@article{Harris_2020,\n  author = {Harris, Charles R. and Millman, K. Jarrod and van der Walt, Stéfan J. and Gommers, Ralf and Virtanen, Pauli and Cournapeau, David and Wieser, Eric and Taylor, Julian and Berg, Sebastian and Smith, Nathaniel J. and Kern, Robert and Picus, Matti and Hoyer, Stephan and van Kerkwijk, Marten H. and Brett, Matthew and Haldane, Allan and del Río, Jaime Fernández and Wiebe, Mark and Peterson, Pearu and Gérard-Marchant, Pierre and Sheppard, Kevin and Reddy, Tyler and Weckesser, Warren and Abbasi, Hameer and Gohlke, Christoph and Oliphant, Travis E.},\n  title = {Array programming with NumPy},\n  journal = {Nature},\n  year = {2020},\n  volume = {585},\n  number = {7825},\n  pages = {357–362},\n  doi = {10.1038/s41586-020-2649-2},\n  url = {http://dx.doi.org/10.1038/s41586-020-2649-2},\n  issn = {1476-4687},\n  month = {September},\n  publisher = {Springer Science and Business Media LLC}\n}",
+    "error": null,
+    "canonical_key": "doi:10.1038/s41586-020-2649-2"
+  },
+  {
+    "source_file": "sample_links.md",
+    "source_line": 5,
+    "source_context": "- [Attention Is All You Need](https://arxiv.org/abs/1706.03762)",
+    "sources": [
+      {
+        "source_file": "sample_links.md",
+        "source_line": 5,
+        "source_context": "- [Attention Is All You Need](https://arxiv.org/abs/1706.03762)"
+      },
+      {
+        "source_file": "sample_note.md",
+        "source_line": 7,
+        "source_context": "- arXiv URL: https://arxiv.org/abs/1706.03762"
+      }
+    ],
+    "raw_match": "https://arxiv.org/abs/1706.03762",
+    "raw_matches": [
+      "https://arxiv.org/abs/1706.03762"
+    ],
+    "id_type": "arxiv",
+    "normalized_id": "1706.03762",
+    "fetch_status": "success",
+    "bibtex_entry": "@article{unnamed,\n  author = {Ashish Vaswani and Noam Shazeer and Niki Parmar and Jakob Uszkoreit and Llion Jones and Aidan N. Gomez and Lukasz Kaiser and Illia Polosukhin},\n  title = {Attention Is All You Need},\n  journal = {arXiv preprint},\n  year = {2017},\n  url = {https://arxiv.org/abs/1706.03762},\n  eprint = {1706.03762},\n  archivePrefix = {arXiv}\n}",
+    "error": null,
+    "canonical_key": "arxiv:1706.03762"
+  },
+  {
+    "source_file": "sample_links.md",
+    "source_line": 7,
+    "source_context": "- [PubMed entry](https://pubmed.ncbi.nlm.nih.gov/31452104/)",
+    "sources": [
+      {
+        "source_file": "sample_links.md",
+        "source_line": 7,
+        "source_context": "- [PubMed entry](https://pubmed.ncbi.nlm.nih.gov/31452104/)"
+      },
+      {
+        "source_file": "sample_note.md",
+        "source_line": 8,
+        "source_context": "- PMID text: PMID: 31452104"
+      }
+    ],
+    "raw_match": "PMID: 31452104",
+    "raw_matches": [
+      "PMID: 31452104",
+      "https://pubmed.ncbi.nlm.nih.gov/31452104/"
+    ],
+    "id_type": "pmid",
+    "normalized_id": "31452104",
+    "fetch_status": "success",
+    "bibtex_entry": "@inbook{Bitencourt_Ferreira_2019,\n  author = {Bitencourt-Ferreira, Gabriela and de Azevedo, Walter Filgueira},\n  title = {Molegro Virtual Docker for Docking},\n  booktitle = {Docking Screens for Drug Discovery},\n  year = {2019},\n  pages = {149–167},\n  doi = {10.1007/978-1-4939-9752-7_10},\n  url = {http://dx.doi.org/10.1007/978-1-4939-9752-7_10},\n  isbn = {9781493997527},\n  issn = {1940-6029},\n  publisher = {Springer New York}\n}",
+    "error": null,
+    "canonical_key": "doi:10.1007/978-1-4939-9752-7_10"
+  }
+]
