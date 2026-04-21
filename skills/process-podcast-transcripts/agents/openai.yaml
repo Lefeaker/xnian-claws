@@ -1,0 +1,4 @@
+interface:
+  display_name: "Process Podcast Transcripts"
+  short_description: "Convert podcast transcripts into Obsidian notes with wiki links."
+  default_prompt: "Process a podcast Word transcript and show notes into Markdown, timestamped transcript, episode-scoped wiki notes, and reusable ASR corrections."

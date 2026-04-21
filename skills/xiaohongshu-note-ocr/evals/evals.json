@@ -1,0 +1,23 @@
+{
+  "skill_name": "xiaohongshu-note-ocr",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "请把这个小红书链接里的多图笔记 OCR 出来，整理成 markdown，放到 download 下。",
+      "expected_output": "Uses the Xiaohongshu OCR workflow, downloads all note images, creates a raw OCR Markdown file under ~/download, and verifies image/OCR counts.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "这个 xhslink 小红书长文图片帮我做成人工校对稿，换行修好，不要在 markdown 里保留分页。",
+      "expected_output": "Creates both raw OCR and continuous proofread Markdown, removes image/page markers, fixes obvious OCR mistakes by checking source images, and reports verification evidence.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "这个小红书链接有 20 张图，帮我全部识别；如果少图要告诉我。",
+      "expected_output": "Compares the extracted manifest image count with the user's expected count, reports mismatches explicitly, and does not claim completion if downloads or OCR sections are missing.",
+      "files": []
+    }
+  ]
+}
