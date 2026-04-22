@@ -1,0 +1,21 @@
+.DS_Store
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+
+# Runtime artifacts that may contain local paths, note snippets, URLs, or Zotero data.
+*.sqlite
+*.sqlite3
+*.db
+*.bib
+*.bak
+*_report.json
+*_mapping.json
+*_mapping.txt
+zotero_import_report.json
+extraction_report.json
+cite_replace_report.json
+cache*.json
+files/

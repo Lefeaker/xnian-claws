@@ -1,0 +1,89 @@
+{
+  "resolver_order": [
+    "optica_uri",
+    "pmc_idconv",
+    "sciencedirect_pii",
+    "semanticscholar_api",
+    "aip_path",
+    "mdpi_path",
+    "researchgate_title",
+    "generic_title",
+    "page_title"
+  ],
+  "resolver_enabled": {
+    "optica_uri": true,
+    "pmc_idconv": true,
+    "sciencedirect_pii": true,
+    "semanticscholar_api": true,
+    "aip_path": true,
+    "mdpi_path": true,
+    "researchgate_title": true,
+    "generic_title": true,
+    "page_title": true
+  },
+  "thresholds": {
+    "crossref_title_min_score": 68,
+    "title_guess_min_chars": 18,
+    "researchgate_min_chars": 20,
+    "researchgate_min_alpha_tokens": 3,
+    "scholarly_slug_min_words": 5
+  },
+  "heuristics": {
+    "scholarly_signals": [
+      "article",
+      "paper",
+      "abstract",
+      "fulltext",
+      "publication",
+      "journal",
+      "doi",
+      "pii",
+      "pmc",
+      "pmid",
+      "arxiv",
+      "science",
+      "research",
+      "proceedings",
+      "manuscript",
+      "preprint"
+    ],
+    "blocked_extensions": [
+      "jpg",
+      "jpeg",
+      "png",
+      "gif",
+      "webp",
+      "svg",
+      "ico",
+      "mp3",
+      "mp4",
+      "avi",
+      "mov",
+      "zip",
+      "rar",
+      "7z",
+      "css",
+      "js",
+      "xml",
+      "json"
+    ],
+    "non_scholarly_hosts": [
+      "mmbiz.qpic.cn",
+      "mp.weixin.qq.com",
+      "api.openai.com",
+      "web.chatboxai.app",
+      "chatgpt.com",
+      "g.co",
+      "t0.gstatic.com",
+      "t1.gstatic.com",
+      "t2.gstatic.com",
+      "www.bilibili.com",
+      "www.zhipin.com",
+      "baike.baidu.com",
+      "en.wikipedia.org",
+      "github.com",
+      "www.linkedin.com",
+      "linkedin.com"
+    ]
+  }
+}
