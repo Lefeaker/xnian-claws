@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Roundtable Lab</title>
+    <link rel="stylesheet" href="/static/styles.css?v=20260424-restore-3" />
+  </head>
+  <body>
+    <main class="shell">
+      <aside class="sidebar">
+        <div class="brand">
+          <div class="brand-mark">圆</div>
+          <div>
+            <h1>Roundtable Lab</h1>
+            <p>证据驱动的多人物圆桌</p>
+          </div>
+        </div>
+        <section class="panel">
+          <h2>材料状态</h2>
+          <div id="modelStatus" class="muted">正在读取配置...</div>
+          <div id="peopleList" class="people-list"></div>
+        </section>
+        <section class="panel">
+          <h2>最近圆桌</h2>
+          <div id="sessionList" class="session-list"></div>
+        </section>
+      </aside>
+
+      <section class="stage">
+        <form id="roundtableForm" class="prompt-card">
+          <label for="topic">议题</label>
+          <textarea id="topic" rows="3">汪曾祺笔下人物的浑圆状态，现代人相比于他们到底缺少什么</textarea>
+          <label for="question" class="question-label">本轮问题</label>
+          <textarea id="question" rows="2" placeholder="第一轮可留空；后续会自动填入主持人的下一层引导问题"></textarea>
+          <div class="controls">
+            <label class="control">
+              <span>人物</span>
+              <input id="participants" value="汪曾祺,沈从文,费孝通,项飙,韩炳哲,庄子" />
+            </label>
+            <label class="control command-control">
+              <span>指令</span>
+              <select id="command">
+                <option value="可">可</option>
+                <option value="深入此节">深入此节</option>
+                <option value="引入新人物">引入新人物</option>
+                <option value="止">止</option>
+              </select>
+            </label>
+            <label class="control">
+              <span>新人物</span>
+              <input id="newParticipant" placeholder="引入新人物时填写" />
+            </label>
+            <label class="control small">
+              <span>证据数</span>
+              <input id="topK" type="number" min="1" max="20" value="8" />
+            </label>
+            <label class="check">
+              <input id="audit" type="checkbox" checked />
+              <span>稽核</span>
+            </label>
+          </div>
+          <div class="run-actions">
+            <button id="startButton" type="submit">开始一轮圆桌</button>
+            <button id="newSessionButton" type="button">新开圆桌</button>
+          </div>
+          <div id="sessionInfo" class="session-info">尚未开始 session</div>
+        </form>
+
+        <section class="timeline-wrap">
+          <div class="timeline-head">
+            <h2>讨论现场</h2>
+            <span id="runStatus" class="status-pill">待开始</span>
+          </div>
+          <button id="jumpToLatest" class="jump-button" type="button" hidden>跳到最新</button>
+          <div id="timeline" class="timeline"></div>
+        </section>
+      </section>
+
+      <aside class="evidence">
+        <section class="notes-wrap">
+          <div class="timeline-head side-head">
+            <h2>研究便签</h2>
+            <span id="notesStatus" class="muted">本地草稿</span>
+          </div>
+          <p class="muted">你可以直接整理重点，或点击发言上的“摘录到便签”。</p>
+          <textarea id="notesTextarea" class="notes-textarea" placeholder="在这里记录你的重点、疑问、分歧和下一步研究方向"></textarea>
+          <div class="notes-actions">
+            <button id="clearNotesButton" type="button">清空便签</button>
+          </div>
+        </section>
+
+        <section class="evidence-wrap">
+          <h2>证据面板</h2>
+          <p class="muted">点击人物发言，可查看该角色本轮检索到的材料片段。</p>
+          <div id="evidencePanel" class="evidence-panel">
+            <div class="empty">暂无证据</div>
+          </div>
+        </section>
+      </aside>
+    </main>
+
+    <template id="messageTemplate">
+      <article class="message">
+        <div class="message-meta">
+          <strong></strong>
+          <div class="message-actions">
+            <button type="button" data-role="clip">摘录到便签</button>
+            <button type="button" data-role="evidence">查看证据</button>
+          </div>
+        </div>
+        <div class="message-body markdown-body"></div>
+      </article>
+    </template>
+
+    <script src="/static/app.js?v=20260424-restore-3"></script>
+  </body>
+</html>

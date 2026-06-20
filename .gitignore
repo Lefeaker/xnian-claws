@@ -10,6 +10,10 @@ __pycache__/
 .cache/
 *.tmp
 *.log
+.env
+.env.*
+!.env.example
+config.toml
 
 # Common runtime artifacts
 references.bib
@@ -17,4 +21,11 @@ extraction_report.json
 cite_replace_report.json
 zotero_import_report.json
 cache.sqlite
+*.sqlite
+*.sqlite-*
 *.bak
+
+# Roundtable Lab local corpora and outputs
+scripts/roundtable-lab/indexes/
+scripts/roundtable-lab/sessions/
+scripts/roundtable-lab/materials/*/sources/

@@ -9,7 +9,8 @@
 ```text
 xnian-claws/
 ├── scripts/
-│   └── obsidian-bib-extractor/
+│   ├── obsidian-bib-extractor/
+│   └── roundtable-lab/
 ├── skills/
 │   ├── obsidian-bib-extractor-workflow/
 │   ├── process-podcast-transcripts/
@@ -26,6 +27,11 @@ xnian-claws/
   - 生成去重后的 BibTeX
   - 预览或执行超链接到 `[@citekey]` 的替换
   - 将失败 URL 补充导入 Zotero
+- `scripts/roundtable-lab/`
+  - 受李继刚 [`ljg-skill-roundtable`](https://github.com/lijigang/ljg-skill-roundtable) 启发的本地证据驱动圆桌工具
+  - 为每个人物建立独立材料库，先检索依据再参与多轮讨论
+  - 支持 CLI 和本地 Web UI，输出 transcript、分轮记录、证据摘录和材料忠实度稽核
+  - 公开版不附带个人 API key、书籍/PDF/EPUB 原文、本地向量索引或历史 session
 - `skills/obsidian-bib-extractor-workflow/`
   - 面向 Codex / Claude Code / 其他 agent 的工作流 skill
   - 统一约束 dry-run、输出文件和 Zotero 前置条件
@@ -48,6 +54,19 @@ pip install -r requirements.txt
 ```
 
 具体命令见 `scripts/obsidian-bib-extractor/README.md`。
+
+`scripts/roundtable-lab/` 是独立 Python 项目：
+
+```bash
+cd scripts/roundtable-lab
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -e .
+cp .env.example .env
+cp config.example.toml config.toml
+```
+
+具体材料准备、索引和运行命令见 `scripts/roundtable-lab/README.md`。
 
 ### 复用 skill
 

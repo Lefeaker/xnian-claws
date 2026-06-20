@@ -1,0 +1,25 @@
+[project]
+name = "roundtable-lab"
+version = "0.1.0"
+description = "Local evidence-grounded multi-agent roundtable runner using SiliconFlow."
+readme = "README.md"
+requires-python = ">=3.12"
+license = "MIT"
+dependencies = [
+  "fastapi>=0.115",
+  "numpy>=1.26",
+  "openai>=1.0",
+  "pypdf>=4.0",
+  "uvicorn>=0.30",
+]
+
+[project.optional-dependencies]
+docx = ["python-docx>=1.1"]
+
+[project.scripts]
+roundtable-lab = "roundtable_lab.roundtable:main"
+roundtable-lab-web = "roundtable_lab.server:main"
+roundtable-lab-ingest = "roundtable_lab.ingest:main"
+
+[tool.ruff]
+line-length = 100

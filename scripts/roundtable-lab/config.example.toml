@@ -1,0 +1,23 @@
+base_url = "https://api.siliconflow.cn/v1"
+chat_model = "Qwen/Qwen3-30B-A3B"
+chat_wire_api = "chat_completions"
+embed_model = "Qwen/Qwen3-Embedding-8B"
+embed_dimensions = 4096
+concurrency = 5
+max_retries = 2
+embed_batch_size = 32
+chunk_size = 1200
+chunk_overlap = 180
+top_k = 8
+temperature = 0.35
+max_tokens = 1800
+
+# Optional: use a separate chat provider.
+# chat_base_url = "https://api.example.com/v1"
+# chat_model = "your-chat-model"
+# chat_wire_api = "responses"
+
+# Optional: read the current Codex provider from a cc-switch database.
+# This is opt-in and only affects chat; embedding still needs its own key.
+# api_profile = "cc-switch-codex"
+# cc_switch_db = "~/.cc-switch/cc-switch.db"
